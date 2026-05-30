@@ -1,0 +1,29 @@
+{
+  "name": "nexus-sync-cli",
+  "version": "1.0.0",
+  "description": "Nexus-Sync — develop locally, run in the cloud.",
+  "type": "module",
+  "bin": {
+    "nexus-sync": "./bin/nexus-sync.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "cli",
+    "sync",
+    "cloud",
+    "shadow-environment",
+    "full-stack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "chokidar": "^3.6.0",
+    "cli-progress": "^3.12.0",
+    "commander": "^12.1.0",
+    "inquirer": "^9.3.7",
+    "ora": "^8.1.1"
+  }
+}
