@@ -3,3 +3,6 @@ node_modules/
 *.log
 .DS_Store
 Thumbs.db
+
+# Local Kiro tooling/config - not part of the package
+.kiro/

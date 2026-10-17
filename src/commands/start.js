@@ -34,7 +34,7 @@ export function registerStart(program) {
         'api/',
       ];
 
-      const liveUrl = `https://${projectName}.nexus-sync.dev`;
+      const liveUrl = `https://${projectName}.nexus-sync.example`;
 
       console.log();
       info(`Watching: ${chalk.cyan(watchPaths.join(', '))}`);

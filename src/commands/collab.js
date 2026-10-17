@@ -27,7 +27,7 @@ export function registerCollab(program) {
       const projectName = config.projectName || 'my-app';
       const token = crypto.randomBytes(8).toString('hex');
       const collabUrl =
-        `https://${projectName}.nexus-sync.dev` +
+        `https://${projectName}.nexus-sync.example` +
         `?collab=${token}`;
 
       console.log();

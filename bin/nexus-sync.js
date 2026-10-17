@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { readFileSync } from 'node:fs';
 import { Command } from 'commander';
 import chalk from 'chalk';
 import { registerInit } from '../src/commands/init.js';
@@ -11,11 +12,15 @@ import { registerCollab } from '../src/commands/collab.js';
 import { registerTest } from '../src/commands/test.js';
 import { registerDeploy } from '../src/commands/deploy.js';
 
+const pkg = JSON.parse(
+  readFileSync(new URL('../package.json', import.meta.url), 'utf-8')
+);
+
 const program = new Command();
 
 program
   .name('nexus-sync')
-  .version('1.0.0')
+  .version(pkg.version)
   .description(
     chalk.bold.cyan('✦ Nexus-Sync') +
     ' — develop locally, run in the cloud.'

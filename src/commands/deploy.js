@@ -28,7 +28,7 @@ export function registerDeploy(program) {
 
       const config = readConfig();
       const projectName = config.projectName || 'my-app';
-      const liveUrl = `https://${projectName}.nexus-sync.dev`;
+      const liveUrl = `https://${projectName}.nexus-sync.example`;
 
       console.log();
       const startTime = Date.now();

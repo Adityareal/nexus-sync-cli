@@ -1,14 +1,28 @@
 {
   "name": "nexus-sync-cli",
-  "version": "1.0.0",
-  "description": "Nexus-Sync — develop locally, run in the cloud.",
+  "version": "0.1.0",
+  "description": "Nexus-Sync CLI: develop locally, run in the cloud. A simulation/prototype that demos the shadow-environment workflow; it does not connect to real cloud infrastructure.",
   "type": "module",
   "bin": {
     "nexus-sync": "./bin/nexus-sync.js"
   },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "engines": {
     "node": ">=18.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adityareal/nexus-sync-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Adityareal/nexus-sync-cli/issues"
+  },
+  "homepage": "https://github.com/Adityareal/nexus-sync-cli#readme",
   "keywords": [
     "cli",
     "sync",
@@ -16,7 +30,7 @@
     "shadow-environment",
     "full-stack"
   ],
-  "author": "",
+  "author": "Adityareal",
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.3.0",
