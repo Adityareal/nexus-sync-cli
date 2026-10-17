@@ -70,7 +70,7 @@ export function registerDb(program) {
 
       console.log();
       const sandboxUrl =
-        `postgres://sandbox.nexus-sync.dev:5432` +
+        `postgres://sandbox.nexus-sync.example:5432` +
         `/${projectName}_sandbox`;
       success(`Sandbox ready at: ${chalk.underline(sandboxUrl)}`);
       console.log();

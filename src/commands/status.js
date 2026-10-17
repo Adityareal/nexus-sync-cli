@@ -20,7 +20,7 @@ export function registerStatus(program) {
 
       const config = readConfig();
       const projectName = config.projectName || 'my-app';
-      const liveUrl = `https://${projectName}.nexus-sync.dev`;
+      const liveUrl = `https://${projectName}.nexus-sync.example`;
       const latency = Math.floor(Math.random() * 41) + 20;
 
       // Simulated uptime
